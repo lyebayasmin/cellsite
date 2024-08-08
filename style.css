@@ -1,0 +1,137 @@
+body{
+    background-color: black;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li{
+    list-style: none;
+}
+
+.navbar li a {
+    color: gold;
+    margin: 15px;
+    text-decoration: none;
+    transition: all 0.5s ease 0s;
+}
+
+.navbar li a:hover{
+    color: silver;
+}
+
+
+
+footer{
+    color: silver;
+    margin-top: 250px;
+    margin-left: 62%;
+}
+
+footer:hover{
+    cursor: pointer;
+    color: gold;
+}
+
+
+header img{
+    margin-left: 47%;
+    border-radius: 30px;
+    border: 2px solid silver;
+    width: 70px;
+    height: 70px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box{
+    color: white;
+    height: 450px;
+    width: 300px;
+    border: 2px solid rgb(51, 44, 44);
+    margin: 25px;
+    border-radius: 10px;
+}
+
+.box img{
+    margin-left: 15%;
+    height: 150px;
+    width: 150px;
+}
+
+.box h2,p{
+    text-align: center;
+}
+
+.btn{
+    margin-top: 10%;
+    margin-left: 15%;
+    width: 200px;
+    padding: 15px;
+    color: black;
+    border: none;
+    border-radius: 15px;
+    background-color: gold;
+    font-weight: bold;
+    font-size: 15px;
+    transition: all 0.7s ease 0s;
+}
+
+.btn:hover{
+    cursor: pointer;
+    filter: drop-shadow(0 0 10px #fffdef);
+    background-color: silver;
+}
+
+.container2{
+    color: white;
+    text-align: center;
+}
+
+.container2 a{
+    color: gold;
+    transition: all 0.5s ease 0s;
+}
+
+.container3{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-top: 10%;
+    font-size: 25px;
+    height: 200px;
+    width: 100%;
+    background-color: black;
+    color: gold;
+    border-radius: 15px;
+    animation: movebox 3s ease-out 0s infinite forwards;
+}
+
+@keyframes movebox{
+    from{
+        width: 100px;
+        font-size: 10px;
+    }
+    to{
+        width: 100%;
+        font-size: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

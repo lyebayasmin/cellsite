@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+
+        <img src="./logo.png" alt="">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Info</a></li>
+                <li><a href="#">Details</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="box">
+            <img src="./samsung.jpg" alt=""> <br><br>
+
+            <h2>SAMSUNG GALAXY</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora a quia rerum molestias. Veritatis, atque aut velit placeat qui voluptatem eius nulla ad itaque repellendus rerum aliquid. Recusandae, aspernatur aut.</p>
+            <button class="btn" onclick="Confirm()">Buy Cell</button>
+        </div>
+
+        <div class="box">
+            <img src="./oppo.jpg" alt=""> <br><br>
+
+            <h2>OPPO MOBILES</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora a quia rerum molestias. Veritatis, atque aut velit placeat qui voluptatem eius nulla ad itaque repellendus rerum aliquid. Recusandae, aspernatur aut.</p>
+            <button class="btn" onclick="Confirm()">Buy Cell</button>
+        </div>
+
+        <div class="box">
+            <img src="./iphone.jpeg" alt=""> <br> <br>
+
+            <h2>APPLE</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora a quia rerum molestias. Veritatis, atque aut velit placeat qui voluptatem eius nulla ad itaque repellendus rerum aliquid. Recusandae, aspernatur aut.</p>
+            <button class="btn" onclick="Confirm()">Buy Cell</button>
+        </div>
+    </div>
+
+    <div class="container2">
+        <h1>MORE INFOR ABOUT OUR COMPANY</h1>
+
+        <span>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi unde cumque optio ex ipsam dignissimos vitae! Odit optio non fuga Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quibusdam minima, pariatur cum nostrum non repellat error, facilis laudantium earum nobis veniam suscipit sed tempore amet explicabo nulla? Sequi non cupiditate dolorum perspiciatis vel reiciendis.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam maiores maxime, minima quo voluptatem quae illo repudiandae eum quos cupiditate Lorem ipsum dolor sit amet.
+        </span>
+          
+
+        <!-- <button  id="button" onclick="togglehide()"> 
+            Read More
+        </button> -->
+
+        <a href="#" id="button" onclick="togglehide()">Read More</a>
+    
+
+        <span id="span">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea amet consequatur velit perspiciatis at? Delectus voluptas mollitia odio praesentium qui Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur fugit praesentium quasi ab vitae saepe doloribus magni repudiandae dolore numquam quo, voluptas nisi, eveniet porro sit harum dolores odit iure! Consequatur necessitatibus vero numquam cumque molestiae assumenda nostrum odio?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam error assumenda mollitia, possimus corporis veritatis cumque sint facere vitae consequuntur, eveniet minus porro culpa quos.
+        </span>
+    </div>
+
+    <div class="container3">
+        <h1>WE ARE HERE TO PROVIDE YOU QUALITY PRODUCT</h1>
+    </div>
+    
+
+    <footer>
+        <span id="time"></span>
+    </footer>
+
+    <script>
+        function displaytime(){
+            let date=new Date();
+            document.getElementById('time').innerHTML=date;
+        }
+
+        displaytime();
+
+        setTimeout(displaytime, 10000);
+
+      function  Confirm(){
+      let result=  confirm("do you really want to buy this cell?","buy cell");
+        if(result){
+            alert("transaction started");
+        }else{
+            alert("no transaction");
+        }
+      }
+
+    let paragraph= document.getElementById('span');
+    let btn= document.getElementById('button');
+
+     function togglehide(){
+        if(paragraph.style.display!="none"){
+            paragraph.style.display="none";
+        }else{
+            paragraph.style.display="inline";
+        }
+     }
+    </script>
+    
+</body>
+</html>
